@@ -70,6 +70,8 @@ void DHCP_Thread(void const * argument)
   ip_addr_t gw;
   struct dhcp *dhcp;
 
+  DHCP_state = DHCP_START;
+
   for (;;)
   {
     switch (DHCP_state)
@@ -175,7 +177,7 @@ void MX_LWIP_Init(void)
 /* USER CODE END H7_OS_THREAD_DEF_CREATE_CMSIS_RTOS_V1 */
 
   /* Start DHCP negotiation for a network interface (IPv4) */
-  dhcp_start(&gnetif);
+  //dhcp_start(&gnetif);
 
 /* USER CODE BEGIN 3 */
 #if LWIP_DHCP
