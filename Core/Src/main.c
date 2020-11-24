@@ -62,7 +62,6 @@ static void MX_USB_OTG_FS_PCD_Init(void);
 void StartDefaultTask(void const * argument);
 
 /* USER CODE BEGIN PFP */
-static void MPU_Config(void);
 
 /* USER CODE END PFP */
 
